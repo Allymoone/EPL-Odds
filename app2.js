@@ -62,19 +62,19 @@ function fetchOdds(latestGames) {
             //row2
             row2Cells[0].innerHTML = game.away_team;
             try {
-                row2Cells[1].innerHTML = williamHill.markets[0].outcomes[0].price;
+                row2Cells[1].innerHTML = `<a href="https://www.williamhill.com" target="_blank">${williamHill.markets[0].outcomes[0].price}</a>`;
             }
             catch (e) {
                 row2Cells[1].innerHTML = 'N/A';
             }
             try {
-            row2Cells[2].innerHTML = betfair.markets[0].outcomes[0].price;
+            row2Cells[2].innerHTML = `<a href="https://www.betfair.com" target="_blank">${betfair.markets[0].outcomes[0].price}</a>`;
              }
              catch (e) {
             row2Cells[2].innerHTML = 'N/A';
              }
             try {
-            row2Cells[3].innerHTML = coral.markets[0].outcomes[0].price;
+            row2Cells[3].innerHTML = `<a href="https://www.coral.co.uk" target="_blank">${coral.markets[0].outcomes[0].price}</a>`;
             }
             catch (e) {
             row2Cells[3].innerHTML = 'N/A';
@@ -83,19 +83,19 @@ function fetchOdds(latestGames) {
             //row3
             row3Cells[0].innerHTML = game.home_team;
             try {
-                row3Cells[1].innerHTML = williamHill.markets[0].outcomes[1].price;
+                row3Cells[1].innerHTML = `<a href="https://www.williamhill.com" target="_blank">${williamHill.markets[0].outcomes[1].price}</a>`;
             }
             catch (e) {
                 row3Cells[1].innerHTML = 'N/A';
             }
             try {
-            row3Cells[2].innerHTML = betfair.markets[0].outcomes[1].price;
+            row3Cells[2].innerHTML = `<a href="https://www.betfair.com" target="_blank">${betfair.markets[0].outcomes[1].price}</a>`;
              }
              catch (e) {
             row3Cells[2].innerHTML = 'N/A';
              }
             try {
-            row3Cells[3].innerHTML = coral.markets[0].outcomes[1].price;
+            row3Cells[3].innerHTML = `<a href="https://www.coral.co.uk" target="_blank">${coral.markets[0].outcomes[1].price}</a>`;
             }
             catch (e) {
             row3Cells[3].innerHTML = 'N/A';
@@ -104,19 +104,19 @@ function fetchOdds(latestGames) {
             //row4
             row4Cells[0].innerHTML = 'Draw';
             try {
-                row4Cells[1].innerHTML = williamHill.markets[0].outcomes[2].price;
+                row4Cells[1].innerHTML = `<a href="https://www.williamhill.com" target="_blank">${williamHill.markets[0].outcomes[2].price}</a>`;
             }
             catch (e) {
                 row4Cells[1].innerHTML = 'N/A';
             }
             try {
-            row4Cells[2].innerHTML = betfair.markets[0].outcomes[2].price;
+            row4Cells[2].innerHTML = `<a href="https://www.betfair.com" target="_blank">${betfair.markets[0].outcomes[2].price}</a>`;
              }
              catch (e) {
             row4Cells[2].innerHTML = 'N/A';
              }
             try {
-            row4Cells[3].innerHTML = coral.markets[0].outcomes[2].price;
+            row4Cells[3].innerHTML = `<a href="https://www.coral.co.uk" target="_blank">${coral.markets[0].outcomes[2].price}</a>`;
             }
             catch (e) {
             row4Cells[3].innerHTML = 'N/A';
